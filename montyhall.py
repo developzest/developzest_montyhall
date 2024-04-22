@@ -31,3 +31,7 @@ if __name__ == "__main__":
   switch_door = True  # 참가자가 문을 변경하는 경우
   winning_rate = monty_hall_simulation(num_trials, switch_door)
   print("Changing doors winning rate:", winning_rate)
+  
+  switch_door = False  # 참가자가 문을 변경하지 않는 경우
+  winning_rate = monty_hall_simulation(num_trials, switch_door)
+  print("Not changing doors winning rate:", winning_rate)
