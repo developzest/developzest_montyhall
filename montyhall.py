@@ -24,3 +24,10 @@ def monty_hall_simulation(num_trials: int, switch_door: bool) -> float:
       wins += 1
 
   return wins / num_trials
+
+if __name__ == "__main__":
+  # 시뮬레이션을 실행하고 결과를 출력합니다.
+  num_trials = 10
+  switch_door = True  # 참가자가 문을 변경하는 경우
+  winning_rate = monty_hall_simulation(num_trials, switch_door)
+  print("Changing doors winning rate:", winning_rate)
